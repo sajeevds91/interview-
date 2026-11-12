@@ -222,7 +222,7 @@ export function ApplicationForm({ role, noticeOptions }: { role: ClientRole; not
             <Text label="Earliest start date (optional)" k="earliestStart" type="date" f={f} set={set} errors={errors} />
           )}
           <div className="grid2">
-            <Text label="Expected monthly salary (LKR, gross)" k="salaryExpectation" f={f} set={set} errors={errors} placeholder="e.g. 150,000" inputMode="numeric" />
+            <Text label="Expected monthly salary (LKR, gross)" k="salaryExpectation" f={f} set={set} errors={errors} placeholder="e.g. 85,000" inputMode="numeric" />
             <div className="field">
               <span className="lbl" style={{ fontWeight: 600, display: "block", marginBottom: 6 }}>Is this negotiable?</span>
               <Pills options={[{ value: "yes", label: "Yes" }, { value: "no", label: "No" }]} value={f.salaryNegotiable} onChange={(v) => set("salaryNegotiable", v)} />
